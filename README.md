@@ -18,13 +18,32 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 | 5  | Respostas Claras     | Fornecer respostas claras e consistentes. |
 
 ---
-### Requisitos Não Funcionais
+### Arquitetura
 
-| ID | Requisito  | Descrição |
-|----|-----------|-------------|
-| 1  | Interface  | A interface deve ser simples e textual, considerando o ambiente de execução no terminal. |
-| 2  | Simplicidade | O sistema deve priorizar a clareza e simplicidade do código, evidenciando os conceitos do paradigma correspondente. |
-| 3  | Desempenho | O desempenho deve ser suficiente para responder perguntas em tempo real para bases de dados pequenas. |
+```lua
+        +-------------------+
+        | Entrada Usuário  | -------|
+        +-------------------+        |                       
+                                     |                       
+                                     v                       
+                          +-------------------+      +-------------------+
+                          |  Interface de Uso  | <-> |  Verifica Entrada |
+                          +-------------------+      +-------------------+
+                                    |                  
+                                    |                 
+                                    +
+                                    |
+                                    v
+                         +-------------------+
+                        | Análise de Sintomas |
+                         +-------------------+
+                                    |
+                                    v
+                         +-------------------+
+                         |   Base de Dados   |
+                         +-------------------+
+
+```
 
 ---
 ### Como Executar
