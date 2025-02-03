@@ -22,12 +22,12 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 
 ```lua
         +-------------------+
-        | Entrada Usuário  | -------|
+        | Entrada Usuário  | --------
         +-------------------+        |                       
                                      |                       
                                      v                       
                           +-------------------+      +-------------------+
-                          |  Interface de Uso  | <-> |  Verifica Entrada |
+                          |  Interface de Uso  | --> |  Verifica Entrada |
                           +-------------------+      +-------------------+
                                     |                  
                                     |                 
