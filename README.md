@@ -34,9 +34,9 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
                                                                 +
                                                                 |
                                                                 v
-                                                        +-------------------+        +-----------------+
-                                                       | Análise de Sintomas | <---> |   Base de Dados |
-                                                        +-------------------+        +-----------------+
+                                                        +-------------------+       +-----------------+
+                                                       | Análise de Sintomas | <--> |   Base de Dados |
+                                                        +-------------------+       +-----------------+
                                                                  |
                                                                  |
                                                                  v
