@@ -3,11 +3,11 @@
 > Projeto desenvolvido para a disciplina de "Paradigmas de Linguagens de Programação" - UFCG 2024.2.
 
 ---
-## Descrição
+### Descrição
 O **Web Doctor** é um sistema inteligente projetado para fornecer respostas automatizadas às dúvidas comuns de pacientes, utilizando informações médicas previamente cadastradas. 
 
 ---
-## Funcionalidades
+### Funcionalidades
 
 | ID | Funcionalidade        | Descrição |
 |----|----------------------|-------------|
@@ -18,7 +18,7 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 | 5  | Respostas Claras     | Fornecer respostas claras e consistentes. |
 
 ---
-## Requisitos Não Funcionais
+### Requisitos Não Funcionais
 
 | ID | Requisito  | Descrição |
 |----|-----------|-------------|
@@ -27,14 +27,14 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 | 3  | Desempenho | O desempenho deve ser suficiente para responder perguntas em tempo real para bases de dados pequenas. |
 
 ---
-## Como Executar
+### Como Executar
 > Em construção
 
 ---
-## Contribuidores
+### Contribuidores
 1. [Ana Laura](...)
 2. [Dimas Diniz](...)
 
 ---
-## Licença
+### Licença
 Este projeto é licenciado sob a [MIT License](LICENSE).
