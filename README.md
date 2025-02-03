@@ -32,7 +32,7 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 
 ---
 ### Contribuidores
-1. [Ana Laura](...)
+1. [Ana Laura](https://www.github.com/anabarrsm)
 2. [Dimas Diniz](...)
 
 ---
