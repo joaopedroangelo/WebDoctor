@@ -46,10 +46,10 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 ```shell
         1. Clone este repositório
         2. Instale o Ollama: https://ollama.com/download
-        3. No terminal, digite: ollama pull llama3.1
+        3. No terminal, digite: ollama pull llama3.2:1b
         4. Pelo terminal, acesse o diretório: /WebDoctor/Haskell
-        5. Carregue os módulos com o comando: ghci WebDoctor
-        6. Execute o módulo principal: main
+        5. Carregue os módulos com o comando: ghci Main.gs
+        6. Execute o módulo principal com o comando: main
 ```
 
 ---
