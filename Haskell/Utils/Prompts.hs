@@ -13,8 +13,6 @@ promptInicial sintomas = unlines
     , "Sintomas informados: " ++ sintomas
     , "FOQUE APENAS NO SINTOMA INFORMADO, NADA ALÉM."
     , "RESUMA SUAS RESPOSTAS."
-    , "NÃO USE CÂNCER COMO POSSIBILIDADE."
-    , "VÁ DIRETO AOS POSSÍVEIS DIAGNÓSTICOS."
     , "SUGIRA APENAS 3 POSSÍVEIS CAUSAS."
     ]
 
