@@ -12,10 +12,8 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 | ID | Funcionalidade        | Descrição |
 |----|----------------------|-------------|
 | 1  | Diagnósticos        | Fazer perguntas sobre sintomas e possíveis diagnósticos. Obter recomendações básicas de tratamento ou cuidados iniciais. |
-| 2  | Medicamentos         | Consultar informações sobre medicamentos e suas indicações. |
-| 3  | Conhecimento prévio  | Identificar condições médicas com base em uma base de conhecimento predefinida. |
-| 4  | Médicos Cadastrados | Sugerir ações como consultar um médico em casos graves. |
-| 5  | Respostas Claras     | Fornecer respostas claras e consistentes. |
+| 2  | Conhecimento prévio  | Identificar condições médicas com base em uma base de conhecimento predefinida. |
+| 3  | Respostas Claras     | Fornecer respostas claras e consistentes. |
 
 ---
 ### Arquitetura
