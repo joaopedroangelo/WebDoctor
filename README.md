@@ -25,36 +25,18 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
                 |
                 v
         +----------------------+
-        |  Interface de Uso     |
+        |  Processamento LLM   |
         +----------------------+
                 |
                 v
         +----------------------+
-        |  Formata Entrada     |
+        |  Formata Resposta    |
         +----------------------+
                 |
                 v
         +----------------------+
-        | Análise de Sintomas  | <-----> +--------------------------+
-        +----------------------+         |   Base de Conhecimento   |
-                |                        +--------------------------+
-                |
-                v
+        |       Saída          |
         +----------------------+
-        | Identifica Soluções  | <-----> +--------------------------+
-        +----------------------+         |   Base de Conhecimento   |
-                |                        +--------------------------+
-                |
-                v
-        +----------------------+
-        |   Gera Respostas     |
-        +----------------------+
-                |
-                v
-        +----------------------+
-        |  Saída ao Usuário    |
-        +----------------------+
-
 ```
 
 ---
