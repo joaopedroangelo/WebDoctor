@@ -41,19 +41,15 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 
 ---
 ### Como Executar
-**Haskel**: 
-1. Clone este repositório.
-2. Instale o Ollama: https://ollama.com/download
-3. No terminal, digite:
-```shell
-ollama pull llama3.1
-```
-4. Acesse o Diretório WebDoctor/Haskell e abra-o no terminal.
-5. Digite:
-```shell
-ghci WebDoctor
 
-main
+**Haskel**: <br>
+```shell
+        1. Clone este repositório
+        2. Instale o Ollama: https://ollama.com/download
+        3. No terminal, digite: ollama pull llama3.2:1b
+        4. Pelo terminal, acesse o diretório: /WebDoctor/Haskell
+        5. Carregue os módulos com o comando: ghci Main.gs
+        6. Execute o módulo principal com o comando: main
 ```
 
 ---
