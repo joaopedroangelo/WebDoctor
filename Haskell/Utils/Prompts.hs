@@ -14,6 +14,7 @@ promptInicial sintomas = unlines
     , "FOQUE APENAS NO SINTOMA INFORMADO, NADA ALÉM."
     , "RESUMA SUAS RESPOSTAS."
     , "SUGIRA APENAS 3 POSSÍVEIS CAUSAS."
+    , "NÃO DIGA DESCULPA."
     ]
 
 -- Prompt genérico para continuar a conversa
