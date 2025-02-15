@@ -20,13 +20,7 @@ main = do
     hFlush hin
     putStrLn "Pensando..."
     resposta <- hGetContents hout
-
-    -- Grava a resposta em um arquivo e exibe ao usuário
-    writeFile "resposta.txt" resposta
-    putStrLn "Terminando o raciocínio..."
+    putStrLn resposta
     _ <- waitForProcess ph
 
-    -- Lê o conteúdo da resposta do arquivo e exibe para o usuário
-    conteudoResposta <- readFile "resposta.txt"
-    putStrLn "Resposta do assistente médico:"
-    putStrLn conteudoResposta
+    return ()
