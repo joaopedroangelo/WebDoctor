@@ -43,6 +43,8 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
 ### Como Executar
 
 **Haskel**: <br>
+> Vídeo-Demo Haskell Pt.1: https://www.youtube.com/watch?v=2WW1TUDW-2o
+
 ```shell
         1. Clone este repositório
         2. Instale o Ollama: https://ollama.com/download
