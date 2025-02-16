@@ -1,20 +1,20 @@
-|=================================================================================|
-| Sintoma                | Possíveis Causas           | Tratamentos               |
-==================================================================================|
-| Dor de cabeça          | Estresse, Desidratação,   | Hidratação, Analgésicos,   |
-|                        | Pressão alta              | Descanso                   |
-----------------------------------------------------------------------------------|
-| Febre                  | Infecção viral, Bacteriana| Antitérmicos, Hidratação   |
-----------------------------------------------------------------------------------|
-| Tosse                  | Gripe, Alergia, Asma      | Xaropes, Inalação,         |
-|                        |                            | Anti-histamínicos         |
-----------------------------------------------------------------------------------|
-| Dor abdominal          | Gastrite, Intoxicação      | Dieta leve, Antiácidos    |
-----------------------------------------------------------------------------------|
-| Tontura                | Hipotensão, Anemia        | Hidratação, Alimentação    |
-----------------------------------------------------------------------------------|
-| Fadiga                 | Estresse, Insônia, Anemia | Sono adequado, Alimentação |
-|---------------------------------------------------------------------------------|
+|==================================================================================|
+| Sintoma                | Possíveis Causas           | Tratamentos                |
+===================================================================================|
+| Dor de cabeça          | Estresse, Desidratação,    | Hidratação, Analgésicos,   |
+|                        | Pressão alta               | Descanso                   |
+-----------------------------------------------------------------------------------|
+| Febre                  | Infecção viral, Bacteriana | Antitérmicos, Hidratação   |
+-----------------------------------------------------------------------------------|
+| Tosse                  | Gripe, Alergia, Asma       | Xaropes, Inalação,         |
+|                        |                            | Anti-histamínicos          |
+-----------------------------------------------------------------------------------|
+| Dor abdominal          | Gastrite, Intoxicação      | Dieta leve, Antiácidos     |
+-----------------------------------------------------------------------------------|
+| Tontura                | Hipotensão, Anemia         | Hidratação, Alimentação    |
+-----------------------------------------------------------------------------------|
+| Fadiga                 | Estresse, Insônia, Anemia  | Sono adequado, Alimentação |
+|----------------------------------------------------------------------------------|
 
 Não encontrou o que gostaria?
 
