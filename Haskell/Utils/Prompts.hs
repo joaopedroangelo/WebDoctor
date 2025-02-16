@@ -11,11 +11,11 @@ promptInicial sintomas = unlines
     , "Sugira ações que o usuário pode tomar, para melhorar os seus sintomas."
     , ""
     , "Sintomas informados: " ++ sintomas
-    , "FOQUE APENAS NO SINTOMA INFORMADO, NADA ALÉM."
     , "RESUMA SUAS RESPOSTAS."
     , "SUGIRA APENAS 3 POSSÍVEIS CAUSAS."
     , "NÃO DIGA DESCULPA E NADA RELACIONADO À LAMENTAÇÃO."
     , "VOCÊ PODE SIM RESPONDER AS DÚVIDAS, MAS INDICA UM PROFISSIONAL NO FINAL."
+    , "NÃO FALE DE SUICÍDIO."
     ]
 
 -- Prompt genérico para continuar a conversa
