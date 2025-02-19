@@ -24,9 +24,9 @@ O **Web Doctor** é um sistema inteligente projetado para fornecer respostas aut
    |    +----------------------+
    |            |
    |            v
-   |    +----------------------+
-   |    |  Processamento LLM   |
-   |    +----------------------+
+   |    +----------------------+          +---------------------+
+   |    |  Processamento LLM   |   ------ |     Base de Dados   |
+   |    +----------------------+          +---------------------+
    |            |
    |            v
    |    +----------------------+
