@@ -5,6 +5,7 @@ import System.IO (hFlush, stdout)
 import qualified Distribution.ModuleName as Doctor.WebDoctor
 import Utils.PrintUtil (printTxt)
 import Utils.LimparTela (limparTela)
+import Menus.MenuPacientes (menuGerPacientes)
 
 menuInicial :: IO ()
 menuInicial = do
