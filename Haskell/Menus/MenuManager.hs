@@ -14,6 +14,7 @@ menuInicial = do
     putStrLn "==================================="
     putStrLn "1 - Conversar com o WebDoctor"
     putStrLn "2 - Visualizar lista de Sintomas, Causas e Tratamentos"
+    putStrLn "3 - Gerenciamento de Pacientes"
     putStrLn "0 - Sair"
     putStrLn "==================================="
     putStr "Escolha uma opção: "
@@ -29,6 +30,7 @@ processarOpcao "2" = do
     putStrLn "\nPressione Enter para voltar ao menu..."
     _ <- getLine
     menuInicial
+processarOpcao "3" = menuGerPacientes
 processarOpcao "0" = putStrLn "Saindo do programa..."
 processarOpcao _   = do
     putStrLn "Opção inválida! Tente novamente."
