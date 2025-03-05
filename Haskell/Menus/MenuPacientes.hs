@@ -64,27 +64,29 @@ excludePatient idP = do
     putStrLn "Paciente excluído com sucesso."
 
 -- Menu para gerenciamento de pacientes
-menuGerPacientes :: IO ()
-menuGerPacientes = do
+menuGerPacientes :: IO () -> IO ()
+menuGerPacientes voltarMenu = do
     putStrLn "\nGerenciamento de Pacientes"
     putStrLn "1. Pesquisar Paciente"
     putStrLn "2. Incluir Paciente"
     putStrLn "3. Excluir Paciente"
     putStrLn "4. Alterar Paciente"
-    putStrLn "5. Sair"
+    putStrLn "5. Voltar ao Menu Inicial"
     putStr "Escolha uma opção: "
     opcao <- getLine
-    processGerPacientes (read opcao)
+    processGerPacientes (read opcao) voltarMenu
+
 
 -- Processa a opção escolhida pelo usuário
-processGerPacientes :: Int -> IO ()
-processGerPacientes 1 = do
+processGerPacientes :: Int -> IO () -> IO ()
+processGerPacientes 1 voltarMenu = do
     putStr "Digite o ID do paciente: "
     idP <- readLn
     queryPatient idP
-    menuGerPacientes
+    menuGerPacientes voltarMenu
 
-processGerPacientes 2 = do
+
+processGerPacientes 2 voltarMenu = do
     putStr "Digite o ID do paciente: "
     idP <- readLn
     putStr "Digite o nome do paciente: "
@@ -92,15 +94,15 @@ processGerPacientes 2 = do
     putStr "Digite a idade do paciente: "
     idadeP <- readLn
     includePatient idP nomeP idadeP
-    menuGerPacientes
+    menuGerPacientes voltarMenu
 
-processGerPacientes 3 = do
+processGerPacientes 3 voltarMenu = do
     putStr "Digite o ID do paciente: "
     idP <- readLn
     excludePatient idP
-    menuGerPacientes
+    menuGerPacientes voltarMenu
 
-processGerPacientes 4 = do
+processGerPacientes 4 voltarMenu = do
     putStr "Digite o ID do paciente: "
     idP <- readLn
     putStr "Digite o nome do paciente: "
@@ -108,13 +110,9 @@ processGerPacientes 4 = do
     putStr "Digite a idade do paciente: "
     idadeP <- readLn
     changePatient idP nomeP idadeP
-    menuGerPacientes
+    menuGerPacientes voltarMenu
 
-processGerPacientes 5 = putStrLn "Saindo do sistema."
-processGerPacientes _ = do
+processGerPacientes 5 voltarMenu = voltarMenu
+processGerPacientes _ voltarMenu = do
     putStrLn "Opção inválida."
-    menuGerPacientes
-
--- 📌 Função principal
-main :: IO ()
-main = menuGerPacientes
+    menuGerPacientes voltarMenu

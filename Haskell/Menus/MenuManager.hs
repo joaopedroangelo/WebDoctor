@@ -31,7 +31,7 @@ processarOpcao "2" = do
     putStrLn "\nPressione Enter para voltar ao menu..."
     _ <- getLine
     menuInicial
-processarOpcao "3" = menuGerPacientes
+processarOpcao "3" = menuGerPacientes menuInicial  -- Aqui passamos menuInicial como argumento
 processarOpcao "0" = putStrLn "Saindo do programa..."
 processarOpcao _   = do
     putStrLn "Opção inválida! Tente novamente."
