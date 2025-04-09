@@ -18,9 +18,10 @@ opcao_menu(2):-
 opcao_menu(3) :-
   estatistica_mais_comum, menu.
 
-opcao_menu(4) :- 
-    write('ID do paciente: '), read(ID),
-    listar_historico(ID), menu.
+opcao_menu(4) :-
+    menu_historico_paciente,
+    menu.
+
 
 opcao_menu(5):-
   nl, write('Saindo...'), nl, nl,

@@ -1,16 +1,25 @@
-estatistica_mais_comum :-
-    findall(D, historico_diagnostico(_, _, _, Diagnosticos), Ds),
-    flatten(Ds, Flat),
-    maplist(arg(1), Flat, Doencas),
-    msort(Doencas, Ordenadas),
-    sort(Doencas, Unicas),
-    contar_freq(Unicas, Ordenadas, Contagem),
-    keysort(Contagem, Ordenada),
-    reverse(Ordenada, [(MaisComum-_Freq)|_]),
-    format('Doença mais comum: ~w~n', [MaisComum]).
+% estatisticas.pl
+:- module(estatisticas, [menu_estatisticas/0]).
+:- consult('Ger_Pacientes.pl').
 
-contar_freq([], _, []).
-contar_freq([H|T], Lista, [(H-N)|Resto]) :-
-    include(==(H), Lista, Filt),
-    length(Filt, N),
-    contar_freq(T, Lista, Resto).
+%% menu_estatisticas is det
+%
+%  Mostra estatísticas globais dos diagnósticos.
+menu_estatisticas :-
+  nl,
+  write('===== ESTATÍSTICAS DO SISTEMA ====='), nl,
+  findall(Doenca, (
+    patient(_, _, _, _, Doencas),
+    member((Doenca, Grau), Doencas),
+    Grau > 0
+  ), TodasDoencas),
+  sort(TodasDoencas, DoencasUnicas),
+  contar_ocorrencias(DoencasUnicas, TodasDoencas),
+  nl.
+
+contar_ocorrencias([], _).
+contar_ocorrencias([D|Resto], Lista) :-
+  include(==(D), Lista, Filtros),
+  length(Filtros, Total),
+  format('- ~w: ~d ocorrências~n', [D, Total]),
+  contar_ocorrencias(Resto, Lista).
