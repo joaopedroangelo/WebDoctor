@@ -1,6 +1,6 @@
 % estatisticas.pl
 :- module(estatisticas, [menu_estatisticas/0]).
-:- consult('Ger_Pacientes.pl').
+% consult('Ger_Pacientes.pl').  % já carregado em main.pl
 
 %% menu_estatisticas is det
 %

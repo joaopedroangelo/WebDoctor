@@ -1,6 +1,6 @@
 % historico.pl
 :- module(historico, [menu_historico_paciente/0]).
-:- consult('Ger_Pacientes.pl').
+% consult('Ger_Pacientes.pl').  % já carregado em main.pl
 
 %% menu_historico_paciente is det
 %
