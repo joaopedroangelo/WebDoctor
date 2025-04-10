@@ -1,6 +1,7 @@
 :- dynamic patient/5.
 
-patient(45, 'Jose', 23, [sede, boca_seca, nausea, vomito, diarreia], [(colera, 5), (aids, 1), (chicungunya, 0), (gripe, 0), (pneumonia, 0), (raiva, 0), (hanseniase, 0), (hepatite, 0), (candidiase, 0), (parkinson, 0), (alzheimer, 0)]).
 patient(777, 'Maria de Jesus', 77, [], []).
 patient(888, 'Jose Aparecido de Souza', 48, [], []).
+patient(45, 'Jose', 23, [sede, boca_seca, nausea, vomito, diarreia, febre, tosse, diarreia, vomito, nausea, boca_seca, sede], [(colera, 5), (aids, 1), (chicungunya, 0), (gripe, 0), (pneumonia, 0), (raiva, 0), (hanseniase, 0), (hepatite, 0), (candidiase, 0), (parkinson, 0), (alzheimer, 0), (colera, 10), (aids, 3), (gripe, 2), (pneumonia, 2), (chicungunya, 1), (raiva, 1), (hepatite, 1), (hanseniase, 0), (candidiase, 0), (parkinson, 0), (alzheimer, 0)]).
+patient(57, ana, 20, [coriza, fraqueza, dor_de_garganta, tosse, febre], [(gripe, 5), (pneumonia, 3), (aids, 2), (chicungunya, 1), (raiva, 1), (hepatite, 1), (colera, 0), (hanseniase, 0), (candidiase, 0), (parkinson, 0), (alzheimer, 0)]).
 

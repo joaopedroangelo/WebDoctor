@@ -98,7 +98,7 @@ iniciar_diagnostico(Id) :-
     write('Iniciando diagnóstico...'), nl,
     write('O diagnóstico deve ser interpretado da seguinte forma: A partir dos sintomas que forem informados,'), nl,
     write('será exibida uma lista de doenças. A primeira doença da lista, é a mais provável. Ao lado de cada'), nl,
-    write('doença, será exibido um valor de acurácia de 1 a 5, quanto mais próximo de 5, mais confiável é'), nl,
+    write('doença, será exibido um valor de acurácia de 1 a 10, quanto mais próximo de 10, mais confiável é'), nl,
     write('o resultado.'), nl,
     write('LEMBRANDO QUE O RESULTADO DESTE PROTÓTIPO É APENAS INFORMATIVO E NÃO SUBSTITUI UMA CONSULTA MÉDICA!'), nl, nl,
     write('Digite os sintomas que está sentindo: '), nl,

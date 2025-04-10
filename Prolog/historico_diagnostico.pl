@@ -13,14 +13,25 @@ menu_historico_paciente :-
   ( paciente_existe(Id) ->
       patient(Id, Nome, _, _, Doencas),
       write('Paciente: '), write(Nome), nl,
-      write('Histórico de diagnósticos: '), nl,
-      print_doencas(Doencas)
+      write('Diagnósticos registrados:'), nl,
+      agrupar_diagnosticos(Doencas, Agrupados),
+      exibir_diagnosticos_agrupados(Agrupados)
   ;
       write('Paciente não encontrado!'), nl
   ), nl.
 
-print_doencas([]) :-
-  write('Nenhum diagnóstico registrado.'), nl.
-print_doencas([(Doenca, Grau)|T]) :-
-  format('- ~w (acurácia: ~d)~n', [Doenca, Grau]),
-  print_doencas(T).
+% Agrupa doenças repetidas e soma as acurácias
+agrupar_diagnosticos(Lista, Agrupado) :-
+  maplist(arg(1), Lista, Doencas),
+  list_to_set(Doencas, Unicas),
+  findall((D, Total), (
+    member(D, Unicas),
+    findall(G, member((D, G), Lista), Grupos),
+    sum_list(Grupos, Total)
+  ), Agrupado).
+
+% Exibe a lista formatada
+exibir_diagnosticos_agrupados([]).
+exibir_diagnosticos_agrupados([(Doenca, Grau)|T]) :-
+  format('- ~w (total de acurácia: ~d)~n', [Doenca, Grau]),
+  exibir_diagnosticos_agrupados(T).
