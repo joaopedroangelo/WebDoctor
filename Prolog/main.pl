@@ -16,10 +16,12 @@ opcao_menu(2):-
   menu_ger_pacientes.
 
 opcao_menu(3) :-
-  menu_estatisticas.
+  menu_estatisticas,
+  menu.
 
 opcao_menu(4) :-
-    menu_historico_paciente.
+  menu_historico_paciente,
+  menu.
 
 
 opcao_menu(5) :-
