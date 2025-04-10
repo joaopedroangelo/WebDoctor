@@ -16,16 +16,17 @@ opcao_menu(2):-
   menu_ger_pacientes.
 
 opcao_menu(3) :-
-  estatistica_mais_comum, menu.
+  menu_estatisticas.
 
 opcao_menu(4) :-
-    menu_historico_paciente,
-    menu.
+    menu_historico_paciente.
 
 
-opcao_menu(5):-
-  nl, write('Saindo...'), nl, nl,
-  halt.
+opcao_menu(5) :-
+  nl, write('Saindo...'), nl.
+
+opcao_menu(_) :-
+  write('Opção inválida!'), nl.
 
 listar_historico(ID) :-
     historico_diagnostico(ID, Data, Sintomas, Diagnosticos),
@@ -37,7 +38,8 @@ listar_historico(_).
 start:-
   consult('Ger_Pacientes.pl'),
   consult('Diagnostico.pl'),
-  consult('Tests.pl'),
+  consult('estatisticas.pl'),
+  consult('historico_diagnostico.pl'),
   load_data,
   menu.
 
